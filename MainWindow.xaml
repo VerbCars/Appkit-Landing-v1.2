@@ -1,0 +1,386 @@
+﻿<Window x:Class="Appkit_Landing_v1._2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Appkit_Landing_v1._2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="5414.14" Width="5000">
+    <ScrollViewer >
+        <Grid>
+            <!--Фон первого блока-->
+            <StackPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Grid.RowSpan="3" Margin="0,0,0,3">
+                <Image Source="Resources/hero-1.jpg"/>
+            </StackPanel>
+            <!--Лого сайта-->
+            <StackPanel Grid.Column="1" Grid.ColumnSpan="4" VerticalAlignment="Top" Height="50" Grid.Row="1" Margin="0,5,0,0">
+                <TextBlock FontWeight="Bold" FontSize="36" Foreground="White">
+                <Image Source="Resources/logo-icon.png" Width="30"/>APP<TextBlock FontWeight="Light">KIT</TextBlock>
+            </TextBlock>
+            </StackPanel>
+            <!--Меню сайта-->
+            <StackPanel Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Top" Margin="0,27,0,0" Height="21">
+                <TextBlock Foreground="LightGray" FontWeight="Bold" FontSize="16" Margin="36,0,0,0">
+                About
+                <TextBlock Margin="23,0,0,0">
+                    Testimonials
+                    <TextBlock Margin="23,0,0,0">
+                        Features
+                        <TextBlock Margin="23,0,0,0">
+                            Team
+                            <TextBlock Margin="23,0,0,0">
+                                Pricing
+                                <TextBlock Margin="23,0,0,0">
+                                    Contact
+                                </TextBlock>
+                            </TextBlock>
+                        </TextBlock>
+                    </TextBlock>
+                </TextBlock>
+            </TextBlock>
+        </StackPanel>
+        <!--Картинка Imac в первом блоке-->
+        <StackPanel Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="3" VerticalAlignment="Bottom" HorizontalAlignment="Left" Height="620" Width="813" Margin="210,0,0,104" Grid.RowSpan="4">
+            <Image Source="Resources/imac.png" Height="550"/>
+        </StackPanel>
+        <!--Информация слева от картинки-->
+        <StackPanel Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3" Margin="0,78,0,3">
+            <TextBlock Foreground="White" FontSize="36" Margin="0,50">AppKit is the perfect front-end<LineBreak/>
+            template for app developers<LineBreak/><TextBlock FontSize="22" FontWeight="Medium"><LineBreak/>
+                It helps developers to build beautiful and user-friendly web<LineBreak/> apps quickly and easily!<LineBreak/></TextBlock></TextBlock>
+            <!--Кнопка Get started-->
+            <Button HorizontalAlignment="Left" Width="140" Height="50" Foreground="White" Background="#3aa7aa" FontWeight="Bold" FontSize="17">Get started</Button>
+        </StackPanel>
+        <!--Второй блок-->
+        <StackPanel Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="4" VerticalAlignment="Center" Height="106" Margin="0,46,0,5">
+            <TextBlock FontSize="36" FontWeight="Light" HorizontalAlignment="Center" Foreground="#494d55" Margin="-460, 0, 0, 10">
+                Why Use AppKit?
+            </TextBlock>
+            <TextBlock FontSize="18" FontWeight="Normal" HorizontalAlignment="Center" Foreground="Gray" Margin="-460, 0, 0, 0">
+                Appkit uses modern front-end technologies and is packed with useful components and widgets to
+            </TextBlock>
+            <TextBlock FontSize="18" FontWeight="Normal" HorizontalAlignment="Center" Foreground="Gray" Margin="-460, 0, 0, 0">
+                speed up your app development
+            </TextBlock>
+        </StackPanel>
+        <!-- Логотипы технологий-->
+        <StackPanel Grid.Column="2" Grid.Row="6" HorizontalAlignment="Left" Margin="0,24,0,381" Width="0" Grid.RowSpan="2">
+              <Image Source="Resources/logo-bootstrap.png" Width="50" Height="50" Margin="-110, 25, 0, 0"/>
+        </StackPanel>
+            
+        <StackPanel Grid.Column="2" Grid.Row="6" HorizontalAlignment="Left" Width="101" Margin="0,24,0,381" Grid.RowSpan="2">
+              <Image Source="Resources/logo-angular.png" Width="61" Height="65" Margin="0, 20, 0, 0"/>
+        </StackPanel>
+            
+        <StackPanel Grid.Column="2" Grid.Row="6" HorizontalAlignment="Left" Width="173" Margin="0,24,0,381" Grid.RowSpan="2">
+              <Image Source="Resources/logo-html5.png" Width="53" Height="60" Margin="90, 20, 0, 0"/>
+        </StackPanel>
+            
+        <StackPanel Grid.Column="2" Grid.Row="6" HorizontalAlignment="Left" Width="253" Margin="0,24,0,381" Grid.RowSpan="2">
+              <Image Source="Resources/logo-css3.png" Width="53" Height="60" Margin="170, 20, 0, 0"/>
+        </StackPanel>
+            
+        <StackPanel Grid.Column="2" Grid.Row="6" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="370" Margin="0,24,0,381" Grid.RowSpan="2">
+              <Image Source="Resources/logo-less.png" Width="90" Height="41" Margin="250, 30, 0, 0"/>
+        </StackPanel>
+            
+        <StackPanel Grid.Column="2" Grid.Row="6" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="532" Margin="0,24,0,381" Grid.RowSpan="2">
+              <Image Source="Resources/logo-jquery.png" Width="132" Height="30" Margin="370, 35, 0, 0"/>
+        </StackPanel>
+        <!--UX-Centered Design-->
+        <StackPanel Grid.Column="1" Grid.Row="7" HorizontalAlignment="Right" Width="186" Margin="0,28,123,111" Grid.RowSpan="4">
+              <Image Source="Resources/figure-1.png" Width="166" Height="163"/>
+              <TextBlock FontSize="18" FontWeight="Bold" Foreground="#40babd" HorizontalAlignment="Center">
+                  <LineBreak/>UX-Centered Design
+              </TextBlock>
+              <TextBlock FontSize="16" Margin="-80, 10, -80, -60" TextAlignment="Center" Foreground="#616670" FontWeight="Light">
+                  Bespoke UX/UI design to enhance your app's<LineBreak/> user experience. Let AppKit take care of<LineBreak/> the design so you can develop without design<LineBreak/> resources.
+              </TextBlock>
+        </StackPanel>
+        <!-- Supercharge App Development-->
+        <StackPanel Grid.Column="2" Grid.Row="7" HorizontalAlignment="Right" Width="270" Margin="0,30,250,111" Grid.ColumnSpan="2" Grid.RowSpan="4">
+              <Image Source="Resources/figure-2.png" Width="207" Height="148"/>
+              <TextBlock FontSize="18" FontWeight="Bold" Foreground="#40babd" HorizontalAlignment="Center" Margin="0,13">
+                  <LineBreak/>Supercharge App Development
+              </TextBlock>
+              <TextBlock FontSize="16" Margin="-80, 0, -70, -60" TextAlignment="Center" Foreground="#616670" FontWeight="Light">
+                  AppKit provides developers with a ready<LineBreak/>-made front-end solution so you can<LineBreak/> 
+                  concentrate on making your app’s back-end<LineBreak/> robust and awesome. It empowers small<LineBreak/> teams to create big things.
+              </TextBlock>
+        </StackPanel>
+        <!--Mobile First-->    
+        <StackPanel Grid.Column="3" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Right" Margin="0,28,550,111" Width="115" Grid.RowSpan="4">
+            <Image Source="Resources/figure-3.png" Width="115" Height="135"/>
+            <TextBlock FontSize="18" FontWeight="Bold" Foreground="#40babd" HorizontalAlignment="Center" Margin="0,25">
+                  <LineBreak/>Mobile First
+            </TextBlock>
+            <TextBlock FontSize="16" Margin="-120, -10, -150, -100" TextAlignment="Center" Foreground="#616670" FontWeight="Light">
+                  Built on the popular Bootstrap framework, so<LineBreak/> the design is “Mobile First” and fully<LineBreak/> responsive. For a startup, building an HTML5<LineBreak/>
+                    webapp which also works across <LineBreak/> mobile devices is the most cost-effective way to get<LineBreak/>
+                        your product off the ground.
+             </TextBlock>
+        </StackPanel>
+        <!--Фон третьего блока-->
+        <StackPanel Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="5" Background="#40babd" Grid.RowSpan="5" Margin="0,24,0,85">
+            <Image Source="Resources/map.png" Width="1500" Height="1000" Opacity="0.2"/>
+        </StackPanel>
+        <!--Отзывы-->
+        <StackPanel Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="5" Margin="90,114,90,54" Grid.RowSpan="4">
+            <TextBlock HorizontalAlignment="Center" FontSize="36" Foreground="White" FontWeight="Light">
+                Many Happy Customers<LineBreak/>
+            </TextBlock>
+            <!--Profile 1-->
+            <Border BorderBrush="Gray" Background="Gray" Opacity="0.6" Width="500" Height="120" Margin="55, 0, 0, 0">
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White">
+                    <LineBreak/> Testimonial goes here Donec felis odio, sagittis eu cursus ac, porttitor eu purus. In a<LineBreak/>
+                    bibendum dui. Nullam id est sed felis rutrum tincidunt eu nec nisi morbi euismod<LineBreak/>
+                    semper neque sed lobortis.<LineBreak/><TextBlock Foreground="Black"><LineBreak/>@JohnK, San Francisco</TextBlock>
+                </TextBlock>
+            </Border>
+        </StackPanel>
+        <!--Profile 2-->
+        <StackPanel Grid.Column="0" Grid.Row="9" Grid.ColumnSpan="5" Grid.RowSpan="5" Margin="-55,27,0,683">
+            <Border BorderBrush="Gray" Background="Gray" Opacity="0.7" Width="500" Height="120">
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White">
+                    <LineBreak/> Testimonial goes here fermentum sed pharetra in, aliquet sodales quam. Ut sed turpis <LineBreak/>
+                    quis orci viverra aliquet interdum ut ipsum.<LineBreak/><TextBlock Foreground="Black"><LineBreak/>@LisaWhite, London</TextBlock>
+                </TextBlock>
+            </Border>
+        </StackPanel>
+        <!--Profile 3-->
+        <StackPanel Grid.Column="0" Grid.Row="10" Grid.ColumnSpan="5" Grid.RowSpan="7" Margin="55,30,0,99">
+            <Border BorderBrush="Gray" Background="Gray" Opacity="0.7" Width="500" Height="120">
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White">
+                    <LineBreak/> Testimonial goes here vestibulum non hendrerit lorem, luctus tincidunt erat. Sed <LineBreak/>
+                    pharetra aliquam posuere. Pellentesque sollicitudin.<LineBreak/><TextBlock Foreground="Black"><LineBreak/>@MattH, Berlin</TextBlock>
+                </TextBlock>
+            </Border>
+        </StackPanel>
+        <!--Profile 4-->    
+        <StackPanel Grid.Column="0" Grid.Row="11" Grid.ColumnSpan="5" Grid.RowSpan="6" Margin="-55,33,0,99">
+            <Border BorderBrush="Gray" Background="Gray" Opacity="0.7" Width="500" Height="120">
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White">
+                    <LineBreak/> Testimonial goes here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean <LineBreak/>
+                    commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis<LineBreak/><TextBlock Foreground="Black"><LineBreak/>@RyanW, Paris</TextBlock>
+                </TextBlock>
+            </Border>
+        </StackPanel>
+        <!--Фото первого отзыва-->
+        <StackPanel Grid.Column="1" Grid.Row="8" Grid.ColumnSpan="1" Grid.RowSpan="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,211,20,91" Height="80" Width="80">
+            <Image Source="Resources/profile-1.png" Width="80" Height="80"/>
+        </StackPanel>
+        <!--Фото второго отзыва-->
+        <StackPanel Grid.Column="3" Grid.Row="9" Grid.ColumnSpan="1" Grid.RowSpan="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="165,51,56,56" Height="80" Width="80">
+            <Image Source="Resources/profile-2.png" Width="80" Height="80"/>
+        </StackPanel>
+        <!--Фото третьего отзыва-->
+        <StackPanel Grid.Column="1" Grid.Row="10" Grid.ColumnSpan="1" Grid.RowSpan="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,52,20,51" Height="80" Width="80">
+            <Image Source="Resources/profile-3.png" Width="80" Height="80"/>
+        </StackPanel>
+        <!--Фото четвертого отзыва-->
+        <StackPanel Grid.Column="3" Grid.Row="11" Grid.ColumnSpan="1" Grid.RowSpan="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="165,55,56,113" Height="80" Width="80">
+            <Image Source="Resources/profile-4.png" Width="80" Height="80"/>
+        </StackPanel>
+        <!--Заголовок четвертого блока-->
+        <StackPanel Grid.Column="2" Grid.Row="12" Grid.ColumnSpan="2" Grid.RowSpan="2" HorizontalAlignment="Center" Margin="162,36,162,683" Width="278">
+            <TextBlock FontWeight="Light" FontSize="38" Foreground="#494d55">
+                <LineBreak/>Discover Features
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="13" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10,0,10,683" Height="23" Width="582">
+            <TextBlock FontWeight="Light" FontSize="17" Foreground="#494d55">
+                AppKit comes with an AngularJS version, 4 colour schemes and 100+ components
+            </TextBlock>
+        </StackPanel>
+        <!--Картинка функций-->
+        <StackPanel Grid.Column="1" Grid.Row="13" Grid.ColumnSpan="2" Grid.RowSpan="1" VerticalAlignment="Center" Height="558" Margin="0,145,0,22">
+            <Image Source="Resources/feature-1.png"/>
+        </StackPanel>
+        <!--Features-->
+        <StackPanel Grid.Column="3" Grid.Row="13" Grid.ColumnSpan="2" Grid.RowSpan="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="150,191,360,136" Height="398" Width="392">
+            <TextBlock FontSize="20" FontWeight="Light">
+                ✐ 20+ Use Case-based App Pages
+            </TextBlock>
+            <TextBlock FontSize="20" FontWeight="Light">
+                <LineBreak/>❒ 100+ Components and Widgets
+            </TextBlock>
+            <TextBlock FontSize="20" FontWeight="Light">
+                <LineBreak/>▥ Useful Chart Libraries
+            </TextBlock>
+            <TextBlock FontSize="20" FontWeight="Light">
+                <LineBreak/>★ AngularJS Version Included
+            </TextBlock>
+            <TextBlock FontSize="20" FontWeight="Light">
+                <LineBreak/>▼ Built on Bootstrap 3
+            </TextBlock>
+            <TextBlock FontSize="20" FontWeight="Light">
+                <LineBreak/>□ Fully Responsive
+            </TextBlock>
+            <TextBlock FontSize="20" FontWeight="Light">
+                <LineBreak/>▯ Valid HTML5 + CSS3
+            </TextBlock>
+            <TextBlock FontSize="20" FontWeight="Light">
+                <LineBreak/>♥ Free Updates and Support + Documentation
+            </TextBlock>
+        </StackPanel>
+        <!--Пятый блок-->
+        <StackPanel Grid.Column="0" Grid.Row="15" Grid.ColumnSpan="5" Grid.RowSpan="5" Background="LightGray" Opacity="0.5" Margin="0,30,0,119"/>
+        <StackPanel Grid.Column="1" Grid.Row="16" Grid.ColumnSpan="3" Grid.RowSpan="2" Margin="150,32,0,106">
+            <TextBlock FontSize="42" FontWeight="Light" HorizontalAlignment="Center" Foreground="#494d55">
+                Our Team
+            </TextBlock>
+            <TextBlock FontSize="24" FontWeight="Light" HorizontalAlignment="Center" Margin="0,15,0,0" Foreground="#a2a6af">
+                See who are behind AppKit
+            </TextBlock>
+        </StackPanel>
+        <!--Описание AppKit-->
+        <StackPanel Grid.Column="1" Grid.Row="17" Grid.ColumnSpan="4" Grid.RowSpan="2" HorizontalAlignment="Center" Width="940" Margin="57,34,557,296">
+            <TextBlock TextAlignment="Center" FontSize="16" Foreground="#333">
+                AppKit is created by Xiaoying Riley and Tomasz Najdek. Xiaoying and Tom got to know each other while working as <LineBreak/>
+                freelancers on Google projects and became good friends. They firmly believe with the right resource, solopreneurs and <LineBreak/>
+                small teams can execute beautiful products too. Thus they made AppKit to help developers and startups make <LineBreak/>
+                outstanding products - the internet has made it possible for the "small guys" to compete directly with the "big guys".
+            </TextBlock>
+        </StackPanel>
+        <!--Первый человек из команды-->
+        <StackPanel Grid.Column="1" Grid.Row="18" Grid.ColumnSpan="3" Margin="90,36,0,119" Grid.RowSpan="2">
+            <Border Width="400" Height="430" HorizontalAlignment="Left" BorderBrush="White" Background="White">
+                <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Foreground="#40babd" FontSize="18" FontWeight="Bold">
+                    <Image Source="Resources/team-1.png" Width="120" Margin="25"/>
+                    <LineBreak/>Xiaoying Riley<LineBreak/><TextBlock Margin="4" FontSize="15" Foreground="#616670" FontWeight="Light">Full-Stack Designer</TextBlock><LineBreak/>
+                    <Image Source="Resources/Social.png" Width="220"/><LineBreak/><TextBlock FontSize="14" Foreground="#616670" FontWeight="Light">
+                       Xiaoying is the UX/UI designer behind AppKit.<LineBreak/>
+                        She loves designing and making Bootstrap <LineBreak/> themes/templates for developers and startups. <LineBreak/>
+                        You can find her sharing useful UX and webdev <LineBreak/> related content on 
+                        <TextBlock Foreground="#40babd">Twitter</TextBlock> <TextBlock>and</TextBlock> <TextBlock Foreground="#40babd">Facebook.</TextBlock> <LineBreak/>
+                        <TextBlock>Follow her if you like what she does!</TextBlock>
+                    </TextBlock>
+                </TextBlock>
+            </Border>
+        </StackPanel>
+        <!--Второй человек из команды-->
+        <StackPanel Grid.Column="1" Grid.Row="18" Grid.ColumnSpan="3" Margin="0,36,0,119" Grid.RowSpan="2">
+            <Border Width="400" Height="430" HorizontalAlignment="Right" BorderBrush="White" Background="White" Margin="0, 0, 0, 0">
+                <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Foreground="#40babd" FontSize="18" FontWeight="Bold">
+                    <Image Source="Resources/team-2.png" Width="120" Margin="25"/>
+                    <LineBreak/>Tomasz Najdek<LineBreak/><TextBlock Margin="4" FontSize="15" Foreground="#616670" FontWeight="Light">Full-Stack Developer</TextBlock><LineBreak/>
+                    <Image Source="Resources/Social-1.png" Width="150"/><LineBreak/><TextBlock FontSize="14" Foreground="#616670" FontWeight="Light" HorizontalAlignment="Left" TextAlignment="Center">
+                      Tom takes care of everything on the <LineBreak/>
+                        programming end making the interface rich <LineBreak/>
+                        and flexible. He is a full-stack developer <LineBreak/>
+                        specialising in building large, scalable and user- <LineBreak/> 
+                        friendly web apps. Follow him on Twitter for <LineBreak/>
+                        fresh developer tips and check out his Github <LineBreak/>
+                        for useful open-source tools.
+                    </TextBlock>
+                </TextBlock>
+            </Border>
+        </StackPanel>
+        <!--Шестой блок-->
+        <StackPanel Grid.Column="1" Grid.Row="19" Grid.ColumnSpan="3" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="263,0,172,395" Height="83" Width="518" Grid.RowSpan="2">
+            <TextBlock FontSize="42" FontWeight="Light" Foreground="#494d55" TextAlignment="Center">
+                Pricing<LineBreak/><TextBlock FontSize="20" Width="518" Foreground="#494d55">AppKit's future updates are 100% FREE for existing customers</TextBlock>
+            </TextBlock>
+        </StackPanel>
+        <!--Первый блок с ценой-->
+        <StackPanel Grid.Column="1" Grid.Row="20" Grid.ColumnSpan="1" Margin="0,80,0,68" HorizontalAlignment="Right" Width="200" Grid.RowSpan="3">
+            <Border BorderBrush="#75c181" Background="#75c181" Width="200" CornerRadius="6">
+                <TextBlock TextAlignment="Center" Height="271" Foreground="White" FontWeight="Bold">
+                    <LineBreak/> Single Applications<LineBreak/><TextBlock FontSize="18" Margin="0, 17,0,0" Foreground="#494d55" FontWeight="Light">$</TextBlock>
+                    <TextBlock FontSize="26" Margin="0,25,0,0">20</TextBlock>
+                    <LineBreak/><TextBlock Margin="10" FontWeight="Light">Restricted to a single<LineBreak/> installation...</TextBlock><LineBreak/>
+                    <TextBlock Foreground="#494d55" FontWeight="Light">License Details</TextBlock><LineBreak/>
+                    <Button Margin="0,50,5,0" Foreground="White" Background="#75c181" Width="80" Height="30"><Button.Resources><Style TargetType="Border"><Setter Property="CornerRadius" Value="2"/>
+                    </Style></Button.Resources>Buy Now</Button>
+                </TextBlock>
+            </Border>
+        </StackPanel>
+        <!--Второй блок с ценой-->
+        <StackPanel Grid.Column="2" Grid.Row="20" Grid.ColumnSpan="1" Margin="0,80,0,68" Grid.RowSpan="3">
+            <Border BorderBrush="#75c181" Background="#40babd" Width="200" CornerRadius="6">
+                <TextBlock TextAlignment="Center" Height="271" Foreground="White" FontWeight="Bold">
+                    <LineBreak/> Multiple Applications<LineBreak/><TextBlock FontSize="18" Margin="0, 17,0,0" Foreground="#494d55" FontWeight="Light">$</TextBlock>
+                    <TextBlock FontSize="26" Margin="0,25,0,0">80</TextBlock>
+                    <LineBreak/><TextBlock Margin="10" FontWeight="Light">May extend to multiple<LineBreak/> installation...</TextBlock><LineBreak/>
+                    <TextBlock Foreground="#494d55" FontWeight="Light">License Details</TextBlock><LineBreak/>
+                    <Button Margin="0,50,5,0" Foreground="White" Background="#40babd" Width="80" Height="30"><Button.Resources><Style TargetType="Border"><Setter Property="CornerRadius" Value="2"/>
+                    </Style></Button.Resources>Buy Now</Button>
+                </TextBlock>
+            </Border>
+        </StackPanel>
+        <!--Третий блок с ценой-->    
+        <StackPanel Grid.Column="3" Grid.Row="20" Grid.ColumnSpan="1" Margin="0,80,0,68" HorizontalAlignment="Left" Width="200" Grid.RowSpan="3">
+            <Border BorderBrush="#F8A13F" Background="#F8A13F" Width="200" CornerRadius="6">
+                <TextBlock TextAlignment="Center" Height="271" Foreground="White" FontWeight="Bold">
+                    <LineBreak/> Extended<LineBreak/><TextBlock FontSize="18" Margin="0, 17,0,0" Foreground="#494d55" FontWeight="Light">$</TextBlock>
+                    <TextBlock FontSize="26" Margin="0,25,0,0">1200</TextBlock>
+                    <LineBreak/><TextBlock Margin="10" FontWeight="Light">May license, sublicense,<LineBreak/> redistribute, or resell the item...</TextBlock><LineBreak/>
+                    <TextBlock Foreground="#494d55" FontWeight="Light">License Details</TextBlock><LineBreak/>
+                    <Button Margin="0,50,5,0" Foreground="White" Background="#F8A13F" Width="80" Height="30"><Button.Resources><Style TargetType="Border"><Setter Property="CornerRadius" Value="2"/>
+                    </Style></Button.Resources>Buy Now</Button>
+                </TextBlock>
+            </Border>
+        </StackPanel>
+        <!--Фон 7-го блока-->
+        <StackPanel Grid.Column="0" Grid.Row="21" Grid.ColumnSpan="5" Grid.RowSpan="2" Background="#494d55">
+            <Image Source="Resources/map.png" Width="1000" Height="500" Opacity="0.2"/>            
+            <Image Source="Resources/map.png" Width="1000" Height="500" Opacity="0.2"/>            
+        </StackPanel>
+        <!--Связь с нами-->
+        <StackPanel Grid.Column="0" Grid.Row="21" Grid.ColumnSpan="5" VerticalAlignment="Center" Height="218" Margin="0,98,0,157" Grid.RowSpan="2">
+            <TextBlock HorizontalAlignment="Center" FontSize="35" Foreground="White" FontWeight="Light" Margin="0,70,60,0">
+                Contact Us
+            </TextBlock>
+            <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Margin="0,30,60,0" Foreground="White" FontSize="18">
+               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget <LineBreak/>
+                dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, <LineBreak/>
+                nascetur ridiculus mus. Donec quam felis. 
+            </TextBlock>
+        </StackPanel>
+        <!--Кнопка для связи-->
+        <StackPanel Grid.Column="2" Grid.Row="22" Grid.ColumnSpan="1" Margin="100,200,0,0">
+            <Button Width="150" Height="50" FontSize="20" Foreground="White" Background="#40babd" FontWeight="Bold"><Button.Resources><Style TargetType="Border"><Setter Property="CornerRadius" Value="2"/>
+                    </Style></Button.Resources>Get in Touch</Button>
+        </StackPanel>
+        <!--Footer-->
+        <StackPanel Grid.Column="0" Grid.Row="23" Grid.ColumnSpan="5" Background="#26282c" Margin="-14,0,0,-171">
+            <TextBlock HorizontalAlignment="Center" Margin="0,20,0,0" Foreground="Gray">
+                Designed with <TextBlock Foreground="Pink"> ❤ </TextBlock> by <TextBlock Foreground="#3aa7aa"> Xiaoying Riley </TextBlock> for developers
+            </TextBlock>
+        </StackPanel>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400"></ColumnDefinition>
+            <ColumnDefinition Width="350"></ColumnDefinition>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+            <ColumnDefinition Width="600"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15"></RowDefinition>
+            <RowDefinition Height="56"></RowDefinition>
+            <RowDefinition Height="630"></RowDefinition>
+            <RowDefinition Height="0"></RowDefinition>
+            <RowDefinition Height="0"/>
+            <RowDefinition Height="156"></RowDefinition>
+            <RowDefinition Height="156"/>
+            <RowDefinition Height="500"/>
+            <RowDefinition Height="381"/>
+            <RowDefinition Height="186"/>
+            <RowDefinition Height="182"/>
+            <RowDefinition Height="247"/>
+            <RowDefinition Height="123"/>
+            <RowDefinition Height="724"/>
+            <RowDefinition Height="0"/>
+            <RowDefinition Height="61"/>
+            <RowDefinition Height="132"/>
+            <RowDefinition Height="141"/>
+            <RowDefinition Height="547"/>
+            <RowDefinition Height="137"/>
+            <RowDefinition Height="459"/>
+            <RowDefinition Height="149"/>
+            <RowDefinition Height="322"/>
+            <RowDefinition Height="38"/>
+        </Grid.RowDefinitions>
+    </Grid>
+        </ScrollViewer >
+</Window>
